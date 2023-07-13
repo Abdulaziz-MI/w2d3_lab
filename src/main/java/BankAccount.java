@@ -12,7 +12,15 @@ private float balance;
 
 private float overdraft;
 
-public BankAccount(){this.balance=0;}
+    public BankAccount(String first, String last, LocalDate dob, int accountNum, String accountType) {
+        this.firstName = first;
+        this.lastName = last;
+        this.dateOfBirth = dob;
+        this.accountNumber = accountNum;
+        this.accountType = accountType;
+        this.balance = 0.00f;
+        this.overdraft = -0.00f;
+    }
 
     public String getFirstName() {return firstName;}
 
